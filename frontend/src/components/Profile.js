@@ -9,7 +9,7 @@ function Profile() {
     // Fetch user data from the backend
     async function fetchUserData() {
       try {
-        const response = await axios.get('/api/profile/'); // Assuming your profile endpoint is at '/api/profile/'
+        const response = await axios.get('/profile/'); // Assuming your profile endpoint is at '/api/profile/'
         setUser(response.data);
         setLoading(false);
       } catch (error) {
